@@ -8,14 +8,14 @@ f.close()
 
 print(r1,r2,r3)
 
-def refelctour(c):
+def reflector(c):
     return alphabet[len(alphabet) - alphabet.find(c)-1]
 
 def enigma_one_char(c):
     c1 = r1[alphabet.find(c)]
     c2 = r2[alphabet.find(c1)]
     c3 = r3[alphabet.find(c2)]
-    reflected = refelctour(c3)
+    reflected = reflector(c3)
     c3 = alphabet[r3.find(reflected)]
     c2 = alphabet[r2.find(c3)]
     c1 = alphabet[r1.find(c2)]
