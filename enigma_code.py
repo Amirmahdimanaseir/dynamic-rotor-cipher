@@ -27,7 +27,7 @@ def rotate_rotors():
     r1 = r1[1:] + r1[0]
     if state %26 == 0:
         r2 = r2[1:] + r2[0]
-    if state % (26 + 26):
+    if state % (26 + 26) == 0:
         r3 = r3[1:] + r3[0]
     else:
         print('is error in yuor code')
